@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+
 const Navbar = () => {
     return ( 
-        <nav className="navbar">
-            <h1>My React-Tailwind Blog</h1>
+        <nav className="shadow-md border-b border-gray-100 p-3">
             <div className="flex items-center justify-end p-6 lg:px-8">
-                    <a href="/" className="m-1.5 p-1.5">Home</a>
-                    <a href="/about" className="m-1.5 p-1.5">About</a>
-                    <a href="/projects" className="m-1.5 p-1.5">Projects</a>
-                    <a href="/contacts" className="m-1.5 p-1.5">Contacts</a>
-                    <a href="/resume" className="m-1.5 p-1.5">Resume</a>
+                    <Link to="/" className="m-1.5 p-1.5">Home</Link>
+                    <Link to="/about" className="m-1.5 p-1.5">About</Link>
+                    <Link to="/projects" className="m-1.5 p-1.5">Projects</Link>
+                    <Link to="/contacts" className="m-1.5 p-1.5">Contacts</Link>
+                    <Link to="/resume" className="m-1.5 p-1.5">Resume</Link>
             </div>
         </nav>
      );

@@ -1,15 +1,16 @@
-import './App.css';
+// import './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
 import Contacts from './Contacts';
 import Projects from './Projects';
+import Footer from './Footer';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="center">
         < Navbar />
         <div className=" font-serif">
           <Switch>
@@ -27,6 +28,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer/>
       </div>
     </Router>
   );
