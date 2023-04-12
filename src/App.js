@@ -5,12 +5,16 @@ import About from './About';
 import Contacts from './Contacts';
 import Projects from './Projects';
 import Footer from './Footer';
+import dayBg from './images/day-bg.png';
+import nightBg from './images/night-bg.png';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min';
 function App() {
+  const hours = new Date().getHours();
+  const bg = (6 < hours < 18) ? dayBg : nightBg;
   return (
     <Router>
-      <div className="center">
+      <div className="h-screen bg-cover" style={{ backgroundImage:`url(${bg})`}}>
         < Navbar />
         <div className=" font-serif">
           <Switch>
