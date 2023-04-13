@@ -14,9 +14,9 @@ function App() {
   const bg = (6 < hours < 18) ? dayBg : nightBg;
   return (
     <Router>
-      <div className="h-screen bg-cover" style={{ backgroundImage:`url(${bg})`}}>
+      <div className="h-screen bg-cover font-serif" style={{ backgroundImage:`url(${bg})`}}>
         < Navbar />
-        <div className=" font-serif">
+        <div>
           <Switch>
             <Route exact path="/">
               <Home/>
