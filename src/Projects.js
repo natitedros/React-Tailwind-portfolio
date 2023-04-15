@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Contents from "./Contents";
+import { Typography } from "@material-tailwind/react";
 
 const Projects = () => {
     const [open, setOpen] = useState(true);
@@ -22,7 +23,7 @@ const sideBar = [];
 for (let i = 0; i < projects.length; i++){
     sideBar.push(
         <div className={`${(selected !== i) && "shadow-md shadow-slate-500"} flex justify-center p-3`} onClick={()=>{ setSelected(i)}}>
-            <h1>{projects[i].title}</h1>
+            <Typography variant="h4">{projects[i].title}</Typography>
         </div>
     )
 }
